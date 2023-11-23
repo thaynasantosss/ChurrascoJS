@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Maven+Pro:wght@400;500;900&display=swap');
+
+:root{
+    --fonttitulo: 'Alfa Slab One', Arial, Helvetica, sans-serif;
+    --fontpadrao: 'Maven Pro', Helvetica, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+html body{
+    width: 100vw;
+    height: 100vh;    
+    font-family: var(--fontpadrao);
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: linear-gradient(to right, #552f02 20%, #271205);
+    color: white;
+    border-bottom: 5px solid #0e0000;
+    font-family: var(--fonttitulo);
+    letter-spacing: 3px;
+    font-size: 2.5em;
+}
+main{
+    max-width: 800px;
+    background: #f5f5f5;
+    margin: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.313);
+}
+.main{
+    max-width: 780px;
+    margin: auto;
+}
+main div h2{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.8em;
+    color: #552f02 ;
+}
+.subconteiner-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    font-size: 1em;
+}
+.box-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    width: 260px;
+}
+.box-input h3{
+    color: #552f02 ;
+    font-size: 4em;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+.box-input input{
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2.5px solid #552f02;
+}
+.box-input input[type="number"]{
+    text-align: center;
+}
+.box-input label{
+    text-align: center;
+}
+.subbox-parag-input{    
+    display: flex;
+    flex-direction: column;
+}
+.subbox-parag-input input{
+    max-width: 100px;
+}
+#mensagem{
+    color: #740d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+.botao-superior{
+    margin: 30px 0px;
+    text-align: center;
+}
+#calcular{ 
+    border: 2.5px solid #740d0d;
+    color: #740d0d;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 7px 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+#calcular:hover{
+    border: 2.5px solid #740d0d;
+    background: linear-gradient(to right, #740d0d 20%, #632c2c);;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 7px 10px;
+}
+
+/*--- INICIO CONTANER COM RESULTADOS ---*/
+.container-resultado{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    border: 2px solid rgba(0, 0, 0, 0.248);
+    padding: 20px 10px;
+    border-radius: 3px;
+}
+.item-js{
+    font-size: .8em;
+    text-align: center;
+    color: #740d0d;
+}
+.item-js h4{
+    text-align: center;
+    color: #121212;
+    font-weight: 500;
+}
+svg {
+    fill: #552f02;
+    width: 50px;
+    height: 50px;
+}
+img{
+    text-align: center;
+    border-radius: 7px;
+    width: 100%;
+    height: 800px;
+    margin-top: 30px;
+}
+footer{
+    margin-top: 25px;
+    width: 100%;
+    background: #460000;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 8px 0px;
+}
+footer a{    
+    font-style: italic;
+    color: #740d0d;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+@media (max-width: 767px) {
+    header{
+        font-size: 1.3em;
+        height: 55px;
+    }
+    main{
+        width: 100%;
+        border-radius: none;
+        box-shadow: none;
+    }
+    .main{
+        width: 100%;
+
+    }
+    main div h2{
+        padding-top: 30px;
+        font-size: 1.2em;
+    }
+    .subconteiner-inputs{
+        padding-top: 20px;
+    }
+    .box-input{
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        margin: auto;
+        width: 60%;
+    }
+    .box-input h3{
+        font-size: 2.5em;
+    }
+    .box-input input{
+        padding-top: 15px;
+        margin: auto;
+    }
+    .subbox-parag-input{    
+        padding-bottom: 15px;
+    }
+    .subbox-parag-input input{
+        width: 100%;
+    }
+ 
+    /*--- INICIO CONTANER COM RESULTADOS ---*/
+    .container-resultado{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .item{
+        width: 95%;
+        margin: 5px 0px;
+    }
+    img{
+        display: block;
+        width: 95%;
+        margin: auto;
+    }
+    footer{
+        margin-top: 25px;
+        font-size: .8em;
+        padding: 10px;
+        height: 70px;
+    }
+    footer a{    
+        font-style: italic;
+        color: #740d0d;
+        text-decoration: none;
+        font-weight: 900;
+    }
+   }
